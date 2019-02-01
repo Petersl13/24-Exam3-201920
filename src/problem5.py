@@ -3,9 +3,9 @@ Exam 3, problem 5.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Lara Peters.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -148,6 +148,18 @@ def problem5(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+
+    a = []
+    for k in range(len(seq_of_seq)):
+        max = -14
+        for j in range(len(seq_of_seq[k])):
+
+            if seq_of_seq[k][j] > max:
+                max = seq_of_seq[k][j]
+        if len(seq_of_seq[k]) > 0:
+            a.append(max)
+
+    return a
 
 
 ###############################################################################
